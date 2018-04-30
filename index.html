@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Арт-студия "7 Чудес"</title>
+    <meta name="description" content="Сайт арт-студии 7 чудес, Харьков" />
+    <meta name="keywords" content="художественные курсы, ..." />
+    <meta name="author" content="Ольга Иванова" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <!-- <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml"> -->
+    <meta name="theme-color" content="#663fb5">
+    <link rel="stylesheet" href="css/landio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Navigation
+    ================================================== -->
+
+    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" class="logo">
+            </a>
+            <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false"
+                aria-controls="collapsingNavbar">
+                &#9776;
+            </a>
+            <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+                <ul class="nav navbar-nav pull-xs-right">
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#main">Главная</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#action">Акция</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#courses">Курсы</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#master">Мастер-классы</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#gallery">Галерея</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section
+    ================================================== -->
+
+    <header id='main' class="jumbotron bg-inverse text-xs-center center-vertically full-height" role="banner">
+        <div class="container">
+            <h1 class="display-3">Арт-студия "7 Чудес"</h1>
+            <h2 class="m-b-3">
+                <p>Научиться рисовать может каждый.</p>
+                <p> Всего 24 занятия и ВЫ самостоятельный художник!</p>
+            </h2>
+            <a class="btn button1 btn-secondary-outline m-b-1" type="button" data-toggle="modal" data-target="#myModal" role="button">
+                <span class="icon-sketch"></span>Записаться на курс</a>
+            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Форма обратной связи</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Имя:</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Электронная почта:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон:</label>
+                                    <input type="phone" class="form-control" id="phone">
+                                </div>
+
+                                <p>Я хочу записаться на:</p>
+                                <select class="form-control color" name="Выберите курс">
+                                    <option value="">Курс "Рисунок и живопись" (для взрослых)</option>
+                                    <option value="">Курс "Рисунок и живопись" (для детей)</option>
+                                    <option value="">Курс "Живопись маслом"</option>
+                                    <option value="">Курс "Портретная живопись"</option>
+                                    <option value="">Курс "City Sketch"</option>
+                                    <option value="">Курс "Акварель"</option>
+                                    <option value="">Курс "Керамическая флористика"</option>
+                                    <option value="">Курс "Петриковская роспись"</option>
+                                    <option value="">Мастер-класс "Живопись маслом, акрилом"</option>
+                                    <option value="">Мастер-класс "Акварель"</option>
+                                    <option value="">Мастер-класс "Батик" (роспись по шелку)</option>
+                                    <option value="">Мастер-класс "Живопись пастелью"</option>
+                                    <option value="">Мастер-класс "Роспись одежды"</option>
+                                    <option value="">Мастер-класс "Витражная роспись"</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="left btn btn-default">Отправить</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <ul class="nav nav-inline social-share">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="icon-vkontakte"></span> 1024</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="icon-facebook"></span> 562</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="icon-instagram"></span> 356</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Intro
+    ================================================== -->
+    <section id='preim' class="section-intro bg-faded text-xs-center">
+        <div class="container animated fadeInUp">
+            <div>
+                <h3 class="color">Наши преимущества</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Индивидуальный подход к каждому ученику</div>
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Лояльные цены, а также бонусы и акции</div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Удобное расположение - центр города, 3 минуты от метро</div>
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Дружеская атмосфера: обучение + кофе, чай + общение</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Уютное, светлое, комфортное и вдохновляющее помещение</div>
+                <div class="col-md-12">
+                    <span class="glyphicon glyphicon-ok"></span> Педагоги - мастера своего дела, с многолетним стажем</div>
+            </div>
+        </div>
+    </section>
+
+    <section id='action' class="section-intro bg-faded text-xs-center">
+        <div class="container">
+            <h3 class="wp wp-1 color">Акция</h3>
+            <h3 class="wp wp-2">Запишись на курс до конца месяца и получи мастер-класс в подарок.</h3>
+            <h3 class="wp wp-1">Осталось: </h3>
+            <div id="clockdiv">
+                <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Дней</div>
+                </div>
+                <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Часов</div>
+                </div>
+                <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Минут</div>
+                </div>
+                <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Секунд</div>
+                </div>
+            </div>
+            <a class="btn button1 btn-secondary-outline m-b-1" type="button" data-toggle="modal" data-target="#myModal" role="button">
+                <span class="icon-sketch"></span>Записаться на курс</a>
+            <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3"> -->
+        </div>
+    </section>
+
+    <!-- Courses
+    ================================================== -->
+
+    <section id='courses' class="section-features bg-faded text-xs-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 color">Курсы</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="img1">
+                        <h4 class="card-title">Курс «Рисунок и живопись»</h4>
+                        <h4 class="card-subtitle text-muted">для взрослых</h4>
+                        <div class="card-block">
+
+
+
+                            <p class="card-text">Длительность курса: 6 мес.</p>
+                            <p class="card-text">Количество занятий: 2 раза в неделю по 1,5 часа</p>
+                            <p class="card-text">Стоимость: 550 грн/мес.</p>
+                            <p class="card-text">Все необходимые материалы включены в стоимость! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="img2">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Курс «Рисунок и живопись»</h4>
+                            <h6 class="card-subtitle text-muted">для детей</h6>
+                            <p class="card-text">Длительность курса: 24 мес.</p>
+                            <p class="card-text">Количество занятий: 1 раз в неделю по 1,5 часа</p>
+                            <p class="card-text">Стоимость: 400 грн/мес.</p>
+                            <p class="card-text">Материалы в стоимость включены частично.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-b-0" id="img3">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Курс «Живопись маслом»</h4>
+                            <h6 class="card-subtitle text-muted">для взрослых</h6>
+                            <p class="card-text">Длительность курса: 7 мес.</p>
+                            <p class="card-text">Количество занятий: 1 раз в неделю по 3 часа</p>
+                            <p class="card-text">Стоимость: 650 грн/мес.</p>
+                            <p class="card-text">Все необходимые материалы (кроме холстов) включены в стоимость!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="img4">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Курс «Портретная живопись» </h4>
+                            <h6 class="card-subtitle text-muted">для взрослых</h6>
+                            <p class="card-text">Длительность курса: 6 мес.</p>
+                            <p class="card-text">Количество занятий: 1 раз в неделю по 1,5 часа</p>
+                            <p class="card-text">Стоимость: 550 грн/мес.</p>
+                            <p class="card-text">Все необходимые материалы включены в стоимость!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="img5">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Курс «City Sketch»</h4>
+                            <h6 class="card-subtitle text-muted">для взрослых</h6>
+                            <p class="card-text">Длительность курса: 14 занятий.</p>
+                            <p class="card-text">2 раза в неделю по 1,5 часа</p>
+                            <p class="card-text">1800 грн/курс</p>
+                            <p class="card-text">Все необходимые материалы включены в стоимость!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a class="btn button1 btn-secondary-outline m-b-1" type="button" data-toggle="modal" data-target="#myModal" role="button">
+            <span class="icon-sketch"></span>Записаться на курс</a></section>
+
+    <!-- Master-Class
+    ================================================== -->
+    <section id='master' class="section-features bg-faded text-xs-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 color">Мастер-классы</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="img6">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Мастер-класс «Живопись маслом»</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text">Длительность: 3 часа</p>
+                            <p class="card-text">Стоимость: 200 грн.</p>
+                            <p class="card-text">Все необходимые материалы (кроме холста) предоставляются! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="img7">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Мастер-класс «Живопись пастелью»</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text">Длительность: 3 часа</p>
+                            <p class="card-text">Стоимость: 150 грн.</p>
+                            <p class="card-text">Все необходимые материалы предоставляются! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-b-0" id="img8">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Мастер-класс «Батик (роспись по шелку)»</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text">Длительность: 3 часа</p>
+                            <p class="card-text">Стоимость: 170 грн.</p>
+                            <p class="card-text">Все необходимые материалы предоставляются! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="img9">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Мастер-класс «Роспись одежды»</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text">Длительность: 3 часа</p>
+                            <p class="card-text">Стоимость: 250 грн.</p>
+                            <p class="card-text">Все необходимые материалы (кроме основы под роспись) предоставляются! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="img5">
+                        <div class="card-block">
+
+                            <h4 class="card-title">Мастер-класс «Витражная роспись»</h4>
+                            <h6 class="card-subtitle text-muted"></h6>
+                            <p class="card-text">Длительность: 3 часа</p>
+                            <p class="card-text">Стоимость: 150 грн.</p>
+                            <p class="card-text">Все необходимые материалы (кроме основы под роспись) предоставляются! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <div class="card" id="img5">
+                            <div class="card-block">
+    
+                                <h4 class="card-title">Мастер-класс «Акварельная живопись»</h4>
+                                <h6 class="card-subtitle text-muted"></h6>
+                                <p class="card-text">Длительность: 3 часа</p>
+                                <p class="card-text">Стоимость: 150 грн.</p>
+                                <p class="card-text">Все необходимые материалы предоставляются! </p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <a class="btn button1 btn-secondary-outline m-b-1" type="button" data-toggle="modal" data-target="#myModal" role="button">
+            <span class="icon-sketch"></span>Записаться на курс</a></section>
+
+    <!-- Text Content
+    ================================================== -->
+
+    <section id='about' class="section-text">
+        <div class="container">
+            <h3 class="text-xs-center">Make your mark on the product industry</h3>
+            <div class="row p-y-3">
+                <div class="col-md-5">
+                    <p class="wp wp-7">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad
+                        rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim
+                        est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse
+                        a mus integer elit massa ut.</p>
+                </div>
+                <div class="col-md-5 col-md-offset-2 separator-x">
+                    <p class="wp wp-8">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad
+                        rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim
+                        est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse
+                        a mus integer elit massa ut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="section-footer bg-inverse" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-5">
+                    <div class="media">
+                        <div class="media-left">
+                            <span class="media-object icon-logo display-1"></span>
+                        </div>
+                        <small class="media-body media-bottom">
+                            &copy; Fogel&Co 2018.
+                            <br> Designed by L.Fogel, developed by V.Kislyak, exclusively for 7Chudes.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.scroll-top').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
